@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header open */
+.header {}
+
+.logo {}
+
+.nav {}
+
+.nav ul {}
+
+.nav ul li {}
+
+.nav ul p li {}
+
+/* .header close */
+
+
+
+
+
+
+
+
+
+
+
+/* footer open  */
+.footer {}
+
+.contacts {}
+
+.contacts .nav ul {}
+
+.contacts .nav ul li {}
+
+.contacts h1 {}
+
+.contacts p {}
+
+/* footer close  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Visitks open  */
+.visitka {}
+
+.visitka h1 {}
+
+.visitka h2 {}
+
+.visitka p {}
+
+#vidgyki {}
+
+#vidgyki h1 {}
+
+#vidgyki .conteiner {}
+
+#vidgyki .conteiner #leftArrow {}
+
+#vidgyki .conteiner #leftArrow .imgVidgyk {}
+
+#vidgyki .conteiner #leftArrow .imgLeftArrow {}
+
+#vidgyki .conteiner #leftArrow .imgRightArrow {}
+
+#vidgyki .conteiner .persen {}
+
+#vidgyki .conteiner .persen img {}
+
+#vidgyki .conteiner .persen h3 {}
+
+#vidgyki .conteiner .persen p {}
+
+/* Visitks close  */
+
+
+
+
+
+
+
+
+
+
+/* index open */
+.Home {}
+
+.card-home-left {}
+
+.card-home-left h1 .card-home-left p .card-home-right {}
+
+.card-home-right h1 {}
+
+.card-home-right p {}
+
+.card-home-right h2 {}
+
+.update {
+    padding: 15px;
+    border: 3px solid black;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 70%;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.imgVidgyk {
+    width: 4%;
+}
+
+/* index close */
+
+
+
+
+
+
+
+
+/* About open */
+.About {}
+
+.About h1 {}
+
+.About h2 {}
+
+.About h3 {}
+
+/* About close */
+
+
+
+
+
+
+
+
+
+/* Skils open */
+.skills {}
+
+.skills h2 {}
+
+.skills .skil {}
+
+.skills .skil p {}
+
+.skills .language {}
+
+.skills .framefork {}
+
+.skills .library {}
+
+.skills .programs {}
+
+/* Skils close */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Projects open */
+.card-proj {}
+
+.Card-skill {}
+
+.Card-skill div {}
+
+.Card-skill div img {}
+
+.Card-skill div p {}
+
+
+.Proj-1 .Proj-1 .card-proj .rullers-robototexnika {}
+
+.Proj-1 .card-proj .rullers-robototexnika h2 {}
+
+.Proj-1 .card-proj .rul-robototexnika {}
+
+.Proj-1 .card-proj .rul-robototexnika .Card-skill {}
+
+.Proj-1 .card-proj .rul-robototexnika .Card-skill h3 {}
+
+.Proj-1 .card-proj .rul-robototexnika .Card-skill div {}
+
+.Proj-1 .card-proj .rul-robototexnika .Card-skill div img {}
+
+.Proj-1 .card-proj .rul-robototexnika .Card-skill div p {}
+
+
+.Proj-2 {}
+
+.Proj-2 .card-proj {}
+
+.Proj-2 .card-proj .rullers-PlayC {}
+
+.Proj-2 .card-proj .rullers-PlayC h2 {}
+
+.Proj-2 .card-proj .rul-PlayC {}
+
+.Proj-2 .card-proj .rul-PlayC .Card-skill {}
+
+.Proj-2 .card-proj .rul-PlayC .Card-skill h2 {}
+
+.Proj-2 .card-proj .rul-PlayC .Card-skill div {}
+
+.Proj-2 .card-proj .rul-PlayC .Card-skill div img {}
+
+.Proj-2 .card-proj .rul-PlayC .Card-skill div p {}
+
+
+
+
+.Proj-3 {}
+
+.Proj-3 .card-proj {}
+
+.Proj-3 .card-proj .rullers-HCJS {}
+
+.Proj-3 .card-proj .rullers-HCJS h2 {}
+
+.Proj-3 .card-proj .rul-HCJS {}
+
+.Proj-3 .card-proj .rul-HCJS .Card-skill {}
+
+.Proj-3 .card-proj .rul-HCJS .Card-skill h2 {}
+
+.Proj-3 .card-proj .rul-HCJS .Card-skill div {}
+
+.Proj-3 .card-proj .rul-HCJS .Card-skill div img {}
+
+.Proj-3 .card-proj .rul-HCJS .Card-skill div p {}
+
+
+
+.Proj-4 {}
+
+.Proj-4 .card-proj {}
+
+.Proj-4 .card-proj .rullers-blender {}
+
+.Proj-4 .card-proj .rullers-blender h2 {}
+
+.Proj-4 .card-proj .rul-blender {}
+
+.Proj-4 .card-proj .rul-blender .Card-skill {}
+
+.Proj-4 .card-proj .rul-blender .Card-skill h2 {}
+
+.Proj-4 .card-proj .rul-blender .Card-skill div {}
+
+.Proj-4 .card-proj .rul-blender .Card-skill div img {}
+
+.Proj-4 .card-proj .rul-blender .Card-skill div p {}
+
+/* Projects close */
+
+
+
+
+
+
+/* Blog open */
+.wrapper-blog {}
+
+.wrapper-blog h1 {}
+
+.wrapper-blog #posts-conteiner {}
+
+.wrapper-blog #posts-conteiner .post h2 {}
+
+.wrapper-blog #posts-conteiner .post p {}
+
+.wrapper-blog #posts-conteiner .post img {}
+
+/* Blog close */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Links open */
+
+.card-link {}
+
+.card-link a {}
+
+.card-link a div {}
+
+.card-link a div p {}
+
+
+.Links-robocode {}
+
+.Links-robocode .card-link {}
+
+.Links-robocode .card-link a {}
+
+.Links-robocode .card-link a div {}
+
+.Links-robocode .card-link a div p {}
+
+
+.Links-CW-p5 {}
+
+.Links-CW-p5 .card-link {}
+
+.Links-CW-p5 .card-link a {}
+
+.Links-CW-p5 .card-link a div {}
+
+.Links-CW-p5 .card-link a div p {}
+
+
+.Links-f-l {}
+
+.Links-f-l .card-link {}
+
+.Links-f-l .card-link a {}
+
+.Links-f-l .card-link a div {}
+
+.Links-f-l .card-link a div p {}
+
+
+.Links-site {}
+
+.Links-site .card-link {}
+
+.Links-site .card-link a {}
+
+.Links-site .card-link a div {}
+
+.Links-site .card-link a div p {}
+
+/* Links close */
+
+
+
+
+
+
+
+
+
+
+
+/* Lihenzii open */
+.Lihenzii {}
+
+.Lihenzii h2 {}
+
+.Lihenzi .card-lih {}
+
+.Lihenzi .card-lih div {}
+
+.Lihenzi .card-lih div img {}
+
+.Lihenzi .card-lih div p {}
+
+.sertficatu {}
+
+.sertficatu h2 {}
+
+.sertficatu .card-ser {}
+
+.sertficatu .card-ser div {}
+
+.sertficatu .card-ser div img {}
+
+.sertficatu .card-ser div p {}
+
+/* Lihenzii close */
+
+
+
+
+
+
+
+/* Password open */
+
+.Password {}
+
+.Password h1 {}
+
+.Password .conteiner {}
+
+.Password .conteiner .card-password {}
+
+.Password .conteiner .card-password div {}
+
+.Password .conteiner .card-password div a {}
+
+.Password .conteiner .card-password div p {}
+
+
+/* Password close */
+
+
+
+
+
+
+
+
+
+
+
+/* media open */
+
+
+
+
+
+
+/* media close */
