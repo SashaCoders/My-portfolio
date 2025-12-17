@@ -1,0 +1,87 @@
+
+
+
+/* header open */
+.header {}
+
+.logo {}
+
+.nav {}
+
+.nav ul {}
+
+.nav ul li {}
+
+.nav ul p li {}
+
+/* .header close */
+
+
+
+
+
+
+
+
+
+
+
+/* footer open  */
+.footer {}
+
+.contacts {}
+
+.contacts .nav ul {}
+
+.contacts .nav ul li {}
+
+.contacts h1 {}
+
+.contacts p {}
+
+/* footer close  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Visitks open  */
+.visitka {}
+
+.visitka h1 {}
+
+.visitka h2 {}
+
+.visitka p {}
+
+#vidgyki {}
+
+#vidgyki h1 {}
+
+#vidgyki .conteiner {}
+
+#vidgyki .conteiner #leftArrow {}
+
+#vidgyki .conteiner #leftArrow .imgVidgyk {}
+
+#vidgyki .conteiner #leftArrow .imgLeftArrow {}
+
+#vidgyki .conteiner #leftArrow .imgRightArrow {}
+
+#vidgyki .conteiner .persen {}
+
+#vidgyki .conteiner .persen img {}
+
+#vidgyki .conteiner .persen h3 {}
+
+#vidgyki .conteiner .persen p {}
+
+/* Visitks close  */
