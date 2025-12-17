@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header open */
+.header {}
+
+.logo {}
+
+.nav {}
+
+.nav ul {}
+
+.nav ul li {}
+
+.nav ul p li {}
+
+/* .header close */
+
+
+
+
+
+
+
+
+
+
+
+/* footer open  */
+.footer {}
+
+.contacts {}
+
+.contacts .nav ul {}
+
+.contacts .nav ul li {}
+
+.contacts h1 {}
+
+.contacts p {}
+
+/* footer close  */
+
+
+/* Blog open */
+.wrapper-blog {}
+
+.wrapper-blog h1 {}
+
+.wrapper-blog #posts-conteiner {}
+
+.wrapper-blog #posts-conteiner .post h2 {}
+
+.wrapper-blog #posts-conteiner .post p {}
+
+.wrapper-blog #posts-conteiner .post img {}
+
+/* Blog close */
