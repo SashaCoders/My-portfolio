@@ -11,17 +11,73 @@
 
 
 /* header open */
-.header {}
+.header {
+    background: #D9D9D9;
+    width: 1920px;
+    height: 156px;
+    display: flex;
+}
 
 .logo {}
 
-.nav {}
+.nav {
+    background: #809AD2;
+    width: 1241px;
+    height: 156px;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
 
-.nav ul {}
+.nav ul {
+    width: 1378px;
+    height: 91px;
+    display: flex;
+}
 
-.nav ul li {}
+.nav ul li {
+    background: #84E0F3;
+    width: 220px;
+    height: 91px;
+    border-radius: 25px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.nav ul p li {}
+.rulSkill {
+    background: #84E0F3;
+    width: 220px;
+    height: 91px;
+    border-radius: 25px;
+}
+
+.rulerSkill {
+    background: #8ECAFF;
+    width: 220px;
+    height: 144px;
+    border-radius: 25px;
+}
+
+.rulAbout {
+    background: #84E0F3;
+    width: 220px;
+    height: 91px;
+    border-radius: 25px;
+}
+
+.rulerAbout {
+    background: #8ECAFF;
+    width: 220px;
+    height: 144px;
+    border-radius: 25px;
+}
+
+.nav ul li a {
+    color: #312669;
+}
 
 /* .header close */
 
@@ -63,7 +119,11 @@
 
 
 /* Visitks open  */
-.visitka {background-image: url('ArrowsAboutMine.svg'); width: 100%; height: 100%;}
+.visitka {
+    background-image: url("https://github.com/SashaCoders/My-portfolio/blob/Vizytka/ArrowsAboutMine.svg");
+    width: 100%;
+    height: 100%;
+}
 
 .visitka h1 {}
 
