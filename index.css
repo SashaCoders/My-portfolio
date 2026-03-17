@@ -63,7 +63,7 @@
 
 
 /* Visitks open  */
-.visitka {}
+.visitka {background-image: url('ArrowsAboutMine.svg'); width: 100%; height: 100%;}
 
 .visitka h1 {}
 
