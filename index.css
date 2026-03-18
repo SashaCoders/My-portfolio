@@ -1,83 +1,180 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.main {}
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-
-
-
-
-
-/* header open */
 .header {
     background: #D9D9D9;
-    width: 1920px;
-    height: 156px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 40px;
+    height: 80px;
 }
 
-.logo {}
-
-.nav {
-    background: #809AD2;
-    width: 1241px;
-    height: 156px;
-    display: flex;
-    position: absolute;
-    top: 0px;
-    right: 0px;
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #312669;
 }
 
-.nav ul {
-    width: 1378px;
-    height: 91px;
+.navAndLen {
     display: flex;
-}
-
-.nav ul li {
-    background: #84E0F3;
-    width: 220px;
-    height: 91px;
-    border-radius: 25px;
-    list-style: none;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-.rulSkill {
-    background: #84E0F3;
-    width: 220px;
-    height: 91px;
-    border-radius: 25px;
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #809AD2;
+    padding: 20px;
+    height: 80px;
+
+    width: fit-content;
 }
 
-.rulerSkill {
-    background: #8ECAFF;
-    width: 220px;
-    height: 144px;
-    border-radius: 25px;
+/* мова */
+.lengvich {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    font-size: 12px;
+    background: none;
+
 }
 
-.rulAbout {
-    background: #84E0F3;
-    width: 220px;
-    height: 91px;
-    border-radius: 25px;
+.lengvich p {
+    color: #312669;
+    padding: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 700;
+    font-style: normal;
 }
 
-.rulerAbout {
-    background: #8ECAFF;
-    width: 220px;
-    height: 144px;
-    border-radius: 25px;
+.lengvich p:hover {
+    box-shadow: 1px 2px 4px #928686e8;
+    transition: 1s;
+}
+
+.lengvich p:active {
+    box-shadow: 0px 0px 3px 1px #6c6565;
+
+    transition: 0.2s;
+}
+
+/* меню */
+.nav ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* кнопки */
+.nav ul li {
+    list-style: none;
 }
 
 .nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #84E0F3;
+    padding: 12px 16px;
+    border-radius: 12px;
+    text-decoration: none;
     color: #312669;
+    font-size: 16px;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 700;
+    font-style: normal;
+    transition: 0.3s;
 }
+
+
+.nav ul li a:hover {
+    background: #5cc7dc;
+}
+
+/* іконки */
+.nav ul li a img {
+    width: 21%;
+
+}
+
+/* соц кнопки */
+.nav ul li:last-child {
+    display: flex;
+    gap: 10px;
+}
+
+.nav ul li:last-child a {
+    padding: 6px;
+}
+
+.nav ul li:last-child img {
+    width: 29px;
+}
+
+.nav ul li div {
+    background: #84E0F3;
+    border-radius: 12px;
+    display: flex;
+
+}
+
+
+/* .nav ul li a,
+.rulSkill,
+.rulAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 60px;
+    background: #84E0F3;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #312669;
+    cursor: pointer;
+}
+
+
+.rulerSkill,
+.rulerAbout {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background: #8ECAFF;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+li:hover .rulerSkill,
+li:hover .rulerAbout {
+    display: flex;
+}
+
+.rulerSkill a,
+.rulerAbout a {
+    background: #fff;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #312669;
+} */
 
 /* .header close */
 
@@ -120,16 +217,14 @@
 
 /* Visitks open  */
 .visitka {
-    background-image: url("https://github.com/SashaCoders/My-portfolio/blob/Vizytka/ArrowsAboutMine.svg");
-    width: 100%;
-    height: 100%;
+
+    background-image: url("ArrowsAboutMine.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 85vh;
+    margin:  10px 0;
 }
-
-.visitka h1 {}
-
-.visitka h2 {}
-
-.visitka p {}
 
 #vidgyki {}
 
