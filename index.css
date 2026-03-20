@@ -223,29 +223,62 @@ li:hover .rulerAbout {
     background-size: 100%;
     background-position: center;
     height: 85vh;
-    margin:  10px 0;
+    margin: 10px 0;
 }
 
-#vidgyki {}
 
-#vidgyki h1 {}
 
-#vidgyki .conteiner {}
+/* при наведении */
 
-#vidgyki .conteiner #leftArrow {}
+.vidgyki {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-#vidgyki .conteiner #leftArrow .imgVidgyk {}
+.vidgyki h2 {}
 
-#vidgyki .conteiner #leftArrow .imgLeftArrow {}
+.vidgyki .conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-#vidgyki .conteiner #leftArrow .imgRightArrow {}
+.vidgyki .conteiner .arrow {
+    opacity: 1;
+}
 
-#vidgyki .conteiner .persen {}
+.vidgyki .conteiner .card {
+    background: #FFC9C9;
+    border-radius: 25px;
+    width: 60%;
+    /* height: ; */
+}
 
-#vidgyki .conteiner .persen img {}
+.vidgyki .conteiner .card .cont {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
 
-#vidgyki .conteiner .persen h3 {}
+.vidgyki .conteiner .card img {
+    width: 16%;
+    margin: 5px;
+}
 
-#vidgyki .conteiner .persen p {}
+.vidgyki .conteiner .card .cont div {
+    margin: 0 10px;
+}
+
+.vidgyki .conteiner .card h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.vidgyki .conteiner .card p {
+    font-size: 18px;
+}
+
+
 
 /* Visitks close  */
