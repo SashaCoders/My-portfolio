@@ -224,11 +224,12 @@ li:hover .rulerAbout {
     background-position: center;
     height: 85vh;
     margin: 10px 0;
+    margin-bottom: 60px;
 }
 
 
 
-/* при наведении */
+
 
 .vidgyki {
     display: flex;
@@ -236,7 +237,12 @@ li:hover .rulerAbout {
     align-items: center;
 }
 
-.vidgyki h2 {}
+.vidgyki h2 {
+    color: #312669;
+    font-family: "Anonymous Pro", monospace;
+    font-size: 32px;
+    margin-bottom: 38px;
+}
 
 .vidgyki .conteiner {
     display: flex;
@@ -246,37 +252,51 @@ li:hover .rulerAbout {
 
 .vidgyki .conteiner .arrow {
     opacity: 1;
+width: 5%;
+
+
 }
 
 .vidgyki .conteiner .card {
     background: #FFC9C9;
     border-radius: 25px;
-    width: 60%;
-    /* height: ; */
+    width: 45%;
+    border: 1px solid black;
+    box-shadow: 4px 9px 30px 17px rgba(43, 34, 173, 19%);
+    margin: 0 30px;
 }
 
 .vidgyki .conteiner .card .cont {
     display: flex;
     align-items: center;
-    padding: 10px;
+    margin: 15px 40px 15px 15px;
 }
 
 .vidgyki .conteiner .card img {
-    width: 16%;
-    margin: 5px;
+    width: 19%;
+    margin-right: 20px;
 }
 
 .vidgyki .conteiner .card .cont div {
-    margin: 0 10px;
+    margin: 15px 0 15px 0;
 }
 
-.vidgyki .conteiner .card h3 {
+.vidgyki .conteiner .card .cont h3 {
+    color: #312669;
+    font-family: "Anonymous Pro", monospace;
     font-size: 32px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.vidgyki .conteiner .card .cont p {
+    margin: 0;
 }
 
 .vidgyki .conteiner .card p {
+    color: #312669;
+    font-family: "Anonymous Pro", monospace;
     font-size: 18px;
+    margin: 0 30px 20px 25px;
 }
 
 
