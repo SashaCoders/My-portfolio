@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Home.css">
     <script src="Home.js" defer></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,16 +20,28 @@
             <nav class="nav">
                 <ul>
                     <li><a href="Home.html">Головна</a></li>
-                    <li>Вміння</li>
-                    <div>
-                        <li><a href="Skils.html">Навички</a></li>
-                        <li><a href="Projects.html">Проекти</a></li>
+
+                    <div class="block blockSkill">
+                        <div class="rul rulSkill" id="rulSkill">
+                            <p>Вміння</p>
+                        </div>
+                        <div class="ruler rulerSkill" id="rulerSkill">
+                            <a href="Skils.html">Навички</a>
+                            <a href="Projects.html">Проекти</a>
+                        </div>
                     </div>
-                    <li>Про мене</li>
-                    <div>
-                        <li><a href="About.html">Про мене</a></li>
-                        <li><a href="Blog.html">Блог</a></li>
+
+                    <div class="block blockAbout">
+                        <div class="rul rulAbout" id="rulAbout">
+                            <p>Про мене</p>
+                        </div>
+                        <div class="ruler rulerAbout" id="rulerAbout">
+                            <a href="About.html">Про мене</a>
+                            <a href="Blog.html">Блог</a>
+                        </div>
                     </div>
+
+
                     <li><a href="Links.html">Силки</a></li>
                     <li><a href="Lihenzii.html">Ліцензії</a></li>
                 </ul>
@@ -72,7 +85,7 @@
             </div>
             <div class="card-home-right">
                 <h1>Привіт я Олександр Подлєсний, а це моє портфоліо.</h1>
-                <p>Тут я розповім про себе та свої навики.</p>
+                <p>Тут я розповім про себе та свої навички.</p>
                 <hr style=" margin: 35px 0;">
                 <h2>
                     Оновлення
@@ -80,7 +93,7 @@
                 <div class="update">
                     <h3>
                         <!--дата-->
-                        00:00:0000
+                        00.00.0000
                     </h3>
                     <p>
                         <!-- перечислення -->
@@ -90,7 +103,7 @@
 
                     <h3>
                         <!-- дата-->
-                        00:00:0000
+                        00.00.0000
                     </h3>
                     <p>
                         <!-- перечислення -->
@@ -103,7 +116,7 @@
 
                     <h3>
                         <!--дата-->
-                        00:00:0000
+                        00.00.0000
                     </h3>
                     <p>
                         <!-- перечислення -->
@@ -118,18 +131,25 @@
         </section>
         <footer class="footer">
             <div class="contacts">
-                <h1><a href="Password.html">My contacts</a></h1>
-                <p>
-                    <i class="fa fa-envelope" aria-hidden="true" onclick="copyText('email')" id="email">
-                        aleksandrpodlesnyi09@email.com</i>
-                    <i class="fa fa-phone" aria-hidden="true" onclick="copyText('telehpone')" id="telehpone">
-                        +(380) 099 394 67 01</i>
-                    <a href="https://web.telegram.org/k/#@Cawaaaaaaaaaaaaaaa" target="_blank"><i class="fa fa-telegram"
-                            title=""></i></a>
-                    <a href="https://github.com/SashaCoders" target="_blank"><i class="fa fa-github" aria-hidden="true"
-                            title="">
-                            GitHub</i></a>
-                </p>
+                <h1>My contacts</h1>
+                <div class="conteiner">
+                    <div class="row rowOne">
+                        <i aria-hidden="true" onclick="copyText('email')" id="email"><img src="Email.svg" alt="">
+                            aleksandrpodlesnyi09@email.com</i>
+
+                        <i aria-hidden="true" onclick="copyText('telehpone')" id="telehpone"><img src="phone.svg"
+                                class="Phone" alt=""> +(380)
+                            099394 67 01</i>
+                    </div>
+                    <div class="row rowTwo">
+                        <a href="https://web.telegram.org/k/#@Cawaaaaaaaaaaaaaaa" target="_blank"><img
+                                src="Telegram.svg" class="Telegram" alt=""></a>
+
+                        <a href="https://github.com/SashaCoders" target="_blank"><img src="GitHub.svg" class="GitHub"
+                                alt=""></a>
+                    </div>
+
+                </div>
                 <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
                 <!-- <a href="#"><i class="fa fa-youtube"></i></a> -->
 
@@ -140,6 +160,7 @@
 
 
             </div>
+
         </footer>
     </div>
 </body>

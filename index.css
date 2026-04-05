@@ -138,53 +138,6 @@
     display: flex;
 
 }
-
-
-/* .nav ul li a,
-.rulSkill,
-.rulAbout {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 160px;
-    height: 60px;
-    background: #84E0F3;
-    border-radius: 15px;
-    text-decoration: none;
-    color: #312669;
-    cursor: pointer;
-}
-
-
-.rulerSkill,
-.rulerAbout {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    background: #8ECAFF;
-    padding: 10px;
-    border-radius: 15px;
-}
-
-
-li:hover .rulerSkill,
-li:hover .rulerAbout {
-    display: flex;
-}
-
-.rulerSkill a,
-.rulerAbout a {
-    background: #fff;
-    padding: 8px;
-    border-radius: 10px;
-    text-align: center;
-    text-decoration: none;
-    color: #312669;
-} */
-
 /* .header close */
 
 
