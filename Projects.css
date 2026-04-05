@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header open */
+.header {}
+
+.logo {}
+
+.nav {}
+
+.nav ul {}
+
+.nav ul li {}
+
+.nav ul p li {}
+
+/* .header close */
+
+
+
+
+
+
+
+
+
+
+
+/* footer open  */
+.footer {}
+
+.contacts {}
+
+.contacts .nav ul {}
+
+.contacts .nav ul li {}
+
+.contacts h1 {}
+
+.contacts p {}
+
+/* footer close  */
+
+
+
+/* Projects open */
+.card-proj {}
+
+.Card-skill {}
+
+.Card-skill div {}
+
+.Card-skill div img {}
+
+.Card-skill div p {}
+
+
+.Proj-1 .Proj-1 .card-proj .rullers-robototexnika {}
+
+.Proj-1 .card-proj .rullers-robototexnika h2 {}
+
+.Proj-1 .card-proj .rul-robototexnika {}
+
+.Proj-1 .card-proj .rul-robototexnika .Card-skill {}
+
+.Proj-1 .card-proj .rul-robototexnika .Card-skill h3 {}
+
+.Proj-1 .card-proj .rul-robototexnika .Card-skill div {}
+
+.Proj-1 .card-proj .rul-robototexnika .Card-skill div img {}
+
+.Proj-1 .card-proj .rul-robototexnika .Card-skill div p {}
+
+
+.Proj-2 {}
+
+.Proj-2 .card-proj {}
+
+.Proj-2 .card-proj .rullers-PlayC {}
+
+.Proj-2 .card-proj .rullers-PlayC h2 {}
+
+.Proj-2 .card-proj .rul-PlayC {}
+
+.Proj-2 .card-proj .rul-PlayC .Card-skill {}
+
+.Proj-2 .card-proj .rul-PlayC .Card-skill h2 {}
+
+.Proj-2 .card-proj .rul-PlayC .Card-skill div {}
+
+.Proj-2 .card-proj .rul-PlayC .Card-skill div img {}
+
+.Proj-2 .card-proj .rul-PlayC .Card-skill div p {}
+
+
+
+
+.Proj-3 {}
+
+.Proj-3 .card-proj {}
+
+.Proj-3 .card-proj .rullers-HCJS {}
+
+.Proj-3 .card-proj .rullers-HCJS h2 {}
+
+.Proj-3 .card-proj .rul-HCJS {}
+
+.Proj-3 .card-proj .rul-HCJS .Card-skill {}
+
+.Proj-3 .card-proj .rul-HCJS .Card-skill h2 {}
+
+.Proj-3 .card-proj .rul-HCJS .Card-skill div {}
+
+.Proj-3 .card-proj .rul-HCJS .Card-skill div img {}
+
+.Proj-3 .card-proj .rul-HCJS .Card-skill div p {}
+
+
+
+.Proj-4 {}
+
+.Proj-4 .card-proj {}
+
+.Proj-4 .card-proj .rullers-blender {}
+
+.Proj-4 .card-proj .rullers-blender h2 {}
+
+.Proj-4 .card-proj .rul-blender {}
+
+.Proj-4 .card-proj .rul-blender .Card-skill {}
+
+.Proj-4 .card-proj .rul-blender .Card-skill h2 {}
+
+.Proj-4 .card-proj .rul-blender .Card-skill div {}
+
+.Proj-4 .card-proj .rul-blender .Card-skill div img {}
+
+.Proj-4 .card-proj .rul-blender .Card-skill div p {}
+
+/* Projects close */
