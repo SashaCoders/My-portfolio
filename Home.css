@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header open */
+.header {}
+
+.logo {}
+
+.nav {}
+
+.nav ul {}
+
+.nav ul li {}
+
+.nav ul p li {}
+
+/* .header close */
+
+
+
+
+
+
+
+
+
+
+
+/* footer open  */
+.footer {}
+
+.contacts {}
+
+.contacts .nav ul {}
+
+.contacts .nav ul li {}
+
+.contacts h1 {}
+
+.contacts p {}
+
+/* footer close  */
+
+
+
+
+/* Home open */
+.Home {}
+
+.card-home-left {}
+
+.card-home-left h1 .card-home-left p .card-home-right {}
+
+.card-home-right h1 {}
+
+.card-home-right p {}
+
+.card-home-right h2 {}
+
+.update {
+    padding: 15px;
+    border: 3px solid black;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 70%;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.imgVidgyk {
+    width: 4%;
+}
+
+/* Home close */
