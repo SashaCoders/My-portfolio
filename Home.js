@@ -10,27 +10,25 @@ function copyText(id) {
     });
   }
 }
-let rulSkill = true;
-$('#rulSkill').click(function () {
-  if (rulSkill == true) {
-    $('.blockSkill').css('background', "#8ECAFF");
-    $('#rulerSkill').css('opacity', 1);
-    rulSkill = false;
-  } else {
+
+$('#rulSkill').hover(function () {
+  $('#rulSkill').css('background', " #5cc7dc");
+  $('.blockSkill').css('background', "#8ECAFF");
+  $('#rulerSkill').css('display', "flex");
+  $('.blockSkill').mouseleave(function () {
+    $('#rulSkill').css('background', "#84E0F3");
     $('.blockSkill').css('background', "none");
-    $('#rulerSkill').css('opacity', 0);
-    rulSkill = true;
-  }
+    $('#rulerSkill').css('display', "none");
+  });
 });
-let rulAbout = true;
-$('#rulAbout').click(function () {
-  if (rulAbout == true) {
-    $('.blockAbout').css('background', "#8ECAFF");
-    $('#rulerAbout').css('opacity', 1);
-    rulAbout = false;
-  } else {
+
+$('#rulAbout').hover(function () {
+  $('#rulAbout').css('background', " #5cc7dc");
+  $('.blockAbout').css('background', "#8ECAFF");
+  $('#rulerAbout').css('display', "flex");
+  $('.blockAbout').mouseleave(function () {
+    $('#rulAbout').css('background', "#84E0F3");
     $('.blockAbout').css('background', "none");
-    $('#rulerAbout').css('opacity', 0);
-    rulAbout = true;
-  }
+    $('#rulerAbout').css('display', "none");
+  });
 });

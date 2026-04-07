@@ -40,51 +40,12 @@
     color: #312669;
 }
 
-.navAndLen {
-    display: flex;
-    align-items: center;
-}
-
-/* мова */
-.lengvich {
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-    font-size: 12px;
-    background: none;
-
-}
-
-.lengvich p {
-    color: #312669;
-    padding: 2px;
-    font-size: 15px;
-    cursor: pointer;
-    font-family: "Anonymous Pro", monospace;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.lengvich a {
-    text-decoration: none;
-}
-
-.lengvich p:hover {
-    color: #8a9ac0e8;
-    transition: 0.5s;
-}
-
-.lengvich p:active {
-    color: #a250dd;
-    transition: 0.2s;
-}
-
 /* меню */
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #5577C0;
+    background: #809AD2;
     padding: 0 15px;
     height: 80px;
     width: 35%;
@@ -104,18 +65,17 @@
     margin-top: 49px;
     /* background: #8ECAFF; */
     border-radius: 12px;
-}
-
-.nav ul .blockSkill {
-    /* background: #8ECAFF; */
+    height: 90px;
 }
 
 .nav ul .block .rul {
     display: flex;
     align-items: center;
     gap: 6px;
-    background: #45E0FF;
+    background: #84E0F3;
     padding: 12px 16px;
+    position: relative;
+    top: 0px;
     border-radius: 12px;
     color: #312669;
     font-size: 16px;
@@ -129,8 +89,10 @@
     background: #5cc7dc;
 }
 
+/* .nav ul .block .rulSkill{} */
+
 .nav ul .block .ruler {
-    opacity: 0;
+    /* opacity: 0; */
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     padding-top: 6px;
@@ -144,10 +106,12 @@
 
 .nav ul .block .rulerSkill {
     width: 85px;
+    display: none;
 }
 
 .nav ul .block .rulerAbout {
     width: 102px;
+    display: none;
 }
 
 .nav ul .block .ruler a {
@@ -164,7 +128,7 @@
     display: flex;
     align-items: center;
     gap: 6px;
-    background: #45E0FF;
+   background: #84E0F3;
     padding: 12px 16px;
     border-radius: 12px;
     text-decoration: none;
