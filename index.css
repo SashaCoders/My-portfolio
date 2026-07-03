@@ -17,6 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 110px; /* Добавь эту строку! Это создаст буфер под хедер */
 }
 
 .header {
@@ -341,8 +342,8 @@ body {
     background-size: 80%;
     background-position: center;
     height: 120vh;
-    margin-bottom: -150px;
-    margin-top: -60px;
+    /*margin-bottom: -70px;*/
+    /*margin-top: -60px;*/
     width: 100%;
 }
 
@@ -361,8 +362,8 @@ body {
 
 .navigation {
     display: flex;
-    margin-top: 20px;
-    margin-bottom: -20px;
+    margin: 20px 0;
+
 }
 
 .navigation .point {
@@ -374,6 +375,10 @@ body {
 
 }
 
+.navigation #pointCard1 {
+    background: #8775FC;
+}
+
 .vidgyki .conteiner {
     display: flex;
     align-items: center;
@@ -381,21 +386,12 @@ body {
 }
 
 .vidgyki .slide {
-    overflow: hidden;
     display: flex;
     align-items: center;
-    height: 370px;
+    /*height: 370px;*/
     width: 820px;
-}
-
-.vidgyki .slider-line {
-    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-left: 41px;
-    width: 3330px;
-    position: relative;
-    left: 0;
-    /* transition: all ease 0.5s;    */
 }
 
 .vidgyki .conteiner .arrow {
@@ -418,9 +414,12 @@ body {
     border-radius: 25px;
     width: 730px;
     border: 3px solid #F187B8;
-
+    position: relative;
     box-shadow: 4px 9px 30px 17px rgba(43, 34, 173, 19%);
-    margin-right: 100px;
+}
+
+.vidgyki .conteiner .slide #card2, #card3, #card4 {
+    display: none;
 }
 
 .vidgyki .conteiner .card .cont {
