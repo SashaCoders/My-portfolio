@@ -7,24 +7,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+body {
+    display: flex;
+    flex-direction: column;
+    background: #F6F5FC;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .header {
-    background: #D9D9D9;
+    background: #F7F5FC;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 0 0 40px;
     height: 80px;
-    width: 100%;
+    width: 98%;
     position: fixed;
-    top: 0px;
+    top: 10px;
     order: 10;
+    box-shadow: 0 4px 20px 11px rgb(124 101 218 / 0.25);
+    border-radius: 27px;
 }
 
 .logo a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
     color: #312669;
+}
+
+.logo a .logotip {
+    background: #FD9193;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.logo a p {
 }
 
 .navAndLen {
@@ -36,8 +63,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    background: #809AD2;
     padding: 20px;
     height: 80px;
 
@@ -48,21 +73,24 @@
 .lengvich {
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
     font-size: 12px;
     background: none;
 
 }
 
 .lengvich p {
-    color: #312669;
+    color: #8689C5;
     padding: 2px;
-    font-size: 15px;
+    font-size: 17px;
     cursor: pointer;
     font-family: "Anonymous Pro", monospace;
     font-weight: 700;
     font-style: normal;
     text-decoration-line: none;
+}
+
+.lengvich #UA {
+    color: #877CFD;
 }
 
 .lengvich a {
@@ -89,22 +117,24 @@
 /* кнопки */
 .nav ul li {
     list-style: none;
+    margin: 0 4px;
 }
 
 .nav ul li a {
     display: flex;
     align-items: center;
-    gap: 6px;
-    background: #84E0F3;
+
+    background: #EBEBFD;
     padding: 12px 16px;
     border-radius: 12px;
     text-decoration: none;
-    color: #312669;
+    color: #2D3548;
     font-size: 16px;
     font-family: "Anonymous Pro", monospace;
     font-weight: 700;
     font-style: normal;
     transition: 0.3s;
+    box-shadow: 0 0 4px 3px rgb(190 177 241 / 0.25);
 }
 
 
@@ -118,17 +148,27 @@
 
 }
 
-/* соц кнопки */
-.nav ul li:last-child {
+.nav ul .icons {
+    margin-left: 10px;
     display: flex;
-    gap: 10px;
+    align-items: center;
 }
 
-.nav ul li:last-child a {
+/* соц кнопки */
+.nav ul .icon {
+    display: flex;
+
+    box-shadow: none;
+    border-radius: 13px;
+    border: 2px solid #C4BFFF;
+    background: #E6E3FD;
+}
+
+.nav ul .icon a {
     padding: 6px;
 }
 
-.nav ul li:last-child img {
+.nav ul .icon img {
     width: 29px;
 }
 
@@ -138,85 +178,101 @@
     display: flex;
 
 }
+
 /* .header close */
-
-
-
-
-
-
-
-
-
 
 
 /* footer open  */
 .footer {
-    margin-top: 25px;
-    background: #D9D9D9;
+    margin-top: 135px;
+    background: radial-gradient(ellipse at center, #F0EEFF 0%, #E8E4FC 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 98%;
+    padding: 20px 150px 20px 90px;
+    border-radius: 27px;
+    border: 2px solid #C4BFFF;
 }
 
 .contacts {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
     margin-top: 15px;
-    margin-bottom: 20px;
+    width: 100%;
 }
 
-.contacts h1 {
-    color: #2D3548;
+.contacts .text {
+    width: 210px
+}
+
+.contacts .text h1 {
+    color: #0F223E;
     font-family: "Inter";
     font-weight: 600;
     font-style: normal;
     margin-bottom: 10px;
 }
 
-.contacts .conteiner {
-    background: #84E0F3;
-    border-radius: 15px;
-    padding: 10px 0 15px 10px;
-    ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.contacts .text p {
+    color: #898BA6;
+    font-family: "Inter";
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 10px;
 }
 
-.contacts .conteiner .rowTwo {
-    display: flex;
-    flex-direction: column;
-}
+/*.contacts img {*/
 
-.contacts .conteiner img {
+
+/*}*/
+
+.contacts .Email, .Phone {
     width: 13%;
+
     margin-right: 10px;
 }
 
-.contacts .conteiner .Phone {
-    width: 10%;
-    margin: 10px 18px 0 0;
+/*.contacts .Phone {*/
+/*    width: 10%;*/
+/*    margin: 10px 18px 0 0;*/
+/*}*/
+
+
+.contacts .Telegram {
+    width: 40px;
+    height: 40px;
 }
 
-
-.contacts .conteiner .Telegram {
-    width: 50%;
-}
-
-.contacts .conteiner .GitHub {
-    width: 50%;
+.contacts .GitHub {
+    width: 40px;
+    height: 40px;
 
 }
 
-.contacts .conteiner a {
+.contacts #telegram, #github {
+    width: 66px;
+}
+
+.contacts a {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin: 2.5px;
+    width: 66px;
+    height: 66px;
+    align-items: center;
 }
 
-.contacts .conteiner i {
+.contacts #email, #telehpone {
+
+
+    padding: 16px 12px 16px 8px;
+
+}
+
+.contacts i {
     display: flex;
     align-items: center;
     color: #312669;
@@ -224,18 +280,19 @@
     font-weight: 700;
     font-style: normal;
     font-size: 14px;
+    justify-content: center;
+    background: #E6E4FD;
+    border: 2px solid #C4BFFF;
+    border-radius: 15px;
+    margin-right: 20px;
+    height: 66px;
+
 }
 
 
 .navFooter {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #809AD2;
     padding: 20px;
     height: 80px;
-    border-radius: 15px;
-    width: fit-content;
     margin-bottom: 15px;
 }
 
@@ -244,7 +301,7 @@
 .navFooter ul {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 /* кнопки */
@@ -256,7 +313,8 @@
     display: flex;
     align-items: center;
     gap: 6px;
-    background: #84E0F3;
+    background: #EBEBFD;
+    box-shadow: 0 0 4px 3px rgb(190 177 241 / 0.24);
     padding: 12px 16px;
     border-radius: 12px;
     text-decoration: none;
@@ -276,30 +334,17 @@
 /* footer close  */
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* Visitks open  */
 .visitka {
-
-    background-image: url("ArrowsAboutMine.svg");
+    background-image: url(NewArrowsAboutMineTwo.svg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 80%;
     background-position: center;
-    height: 85vh;
-    margin-bottom: 30px;
+    height: 120vh;
+    margin-bottom: -150px;
+    margin-top: -60px;
+    width: 100%;
 }
-
-
-
 
 
 .vidgyki {
@@ -314,7 +359,20 @@
     font-size: 32px;
 }
 
+.navigation {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
 
+.navigation .point {
+    background: #D3CCF7;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
 
 .vidgyki .conteiner {
     display: flex;
@@ -352,13 +410,15 @@
 
 #arrowRight {
     right: 0;
+    transform: rotate(180deg);
 }
 
 .vidgyki .conteiner .card {
     background: #FFC9C9;
     border-radius: 25px;
     width: 730px;
-    border: 1px solid black;
+    border: 3px solid #F187B8;
+
     box-shadow: 4px 9px 30px 17px rgba(43, 34, 173, 19%);
     margin-right: 100px;
 }
@@ -395,7 +455,6 @@
     font-size: 18px;
     margin: 0 30px 20px 25px;
 }
-
 
 
 /* Visitks close  */
