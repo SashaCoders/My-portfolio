@@ -1,83 +1,111 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.main {}
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+body {
+    display: flex;
+    flex-direction: column;
+    background: #F6F5FC;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 110px; /* Добавь эту строку! Это создаст буфер под хедер */
+}
 
 .header {
-    background: #D9D9D9;
-
+    background: #F7F5FC;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 0 0 40px;
     height: 80px;
-    width: 100%;
+    width: 98%;
     position: fixed;
-    top: 0px;
+    top: 10px;
     order: 10;
-
+    box-shadow: 0 4px 20px 11px rgb(124 101 218 / 0.25);
+    border-radius: 27px;
+    z-index: 100;
 }
 
 .logo a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
     color: #312669;
 }
 
-/* меню */
+.logo a .logotip {
+    background: #FD9193;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.logo a p {
+}
+
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #809AD2;
-    padding: 0 15px;
+    padding: 20px;
     height: 80px;
-    width: 35%;
-    position: absolute;
-    top: 0;
-    right: 0;
+
+    width: fit-content;
 }
 
-
+/* меню */
 .nav ul {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
+.nav ul .active {
+    background: #7873FC;
+    color: white;
+    box-shadow: none;
+}
+
+.nav ul .active:hover {
+    background: #7873FC;
+    color: white;
+    box-shadow: none;
+}
+
 .nav ul .block {
-    margin-top: 49px;
+    margin-top: 70px;
     /* background: #8ECAFF; */
     border-radius: 12px;
-    height: 90px;
+    height: 110px;
+    /*box-shadow: 0 2px 4px 3px rgb(190 177 241 / 0.4);*/
+    box-shadow: none;
 }
 
 .nav ul .block .rul {
+    background: #EBEBFD;
+    text-decoration: none;
+    color: #2D3548;
+    box-shadow: 0 0 4px 3px rgb(190 177 241 / 0.30);
     display: flex;
     align-items: center;
     gap: 6px;
-    background: #84E0F3;
     padding: 12px 16px;
     position: relative;
     top: 0px;
     border-radius: 12px;
-    color: #312669;
     font-size: 16px;
     font-family: "Anonymous Pro", monospace;
     font-weight: 700;
@@ -86,7 +114,7 @@
 }
 
 .nav ul .block .rul:hover {
-    background: #5cc7dc;
+    background: #F3F3FB;
 }
 
 /* .nav ul .block .rulSkill{} */
@@ -100,7 +128,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #312669;
+    color: #2D3548;
     text-decoration: none;
 }
 
@@ -116,121 +144,160 @@
 
 .nav ul .block .ruler a {
     text-decoration: none;
-    color: #312669;
+    color: #2D3548;
+    position: relative; /* Ограничивает линию рамками этой ссылки */
+    display: inline-block; /* Заставляет ссылку сжаться строго по ширине текста */
+    padding: 5px 0;
+}
+
+/* Эффект при наведении */
+.nav ul .block .ruler a:hover {
+    color: #2D3548; /* Цвет текста становится темнее и четче */
+}
+
+/* Создаем скрытую линию под текстом */
+.nav ul .block .ruler a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0); /* Изначально линия сжата в 0 */
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #877CFD; /* Твой фирменный фиолетовый */
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out; /* Плавная анимация */
+}
+
+/* При наведении линия разворачивается на всю ширину */
+.nav ul .block .ruler a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 /* кнопки */
 .nav ul li {
     list-style: none;
+    margin: 0 4px;
 }
 
 .nav ul li a {
     display: flex;
     align-items: center;
-    gap: 6px;
-   background: #84E0F3;
+
+    background: #EBEBFD;
     padding: 12px 16px;
     border-radius: 12px;
     text-decoration: none;
-    color: #312669;
+    color: #2D3548;
     font-size: 16px;
     font-family: "Anonymous Pro", monospace;
     font-weight: 700;
     font-style: normal;
     transition: 0.3s;
+    box-shadow: 0 0 4px 3px rgb(190 177 241 / 0.30);
 }
 
 
 .nav ul li a:hover {
-    background: #5cc7dc;
+    background: #F3F3FB;
+    box-shadow: 0 0 4px 3px rgb(121 107 177 / 30%);
 }
 
-/* іконки */
-.nav ul li a img {
-    width: 21%;
+.nav ul li div {
+    background: #84E0F3;
+    border-radius: 12px;
+    display: flex;
 
 }
 
 /* .header close */
 
 
-
-
-
-
-
-
-
-
-
-
 /* footer open  */
 .footer {
-    margin-top: 25px;
-    background: #D9D9D9;
+    margin-top: 135px;
+    background: radial-gradient(ellipse at center, #F0EEFF 0%, #E8E4FC 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 98%;
+    padding: 20px 150px 20px 90px;
+    border-radius: 27px;
+    border: 2px solid #C4BFFF;
+    margin-bottom: 10px;
 }
 
 .contacts {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
     margin-top: 15px;
-    margin-bottom: 20px;
+    width: 100%;
 }
 
-.contacts h1 {
-    color: #2D3548;
+.contacts .text {
+    width: 210px
+}
+
+.contacts .text h1 {
+    color: #0F223E;
     font-family: "Inter";
     font-weight: 600;
     font-style: normal;
     margin-bottom: 10px;
 }
 
-.contacts .conteiner {
-    background: #84E0F3;
-    border-radius: 15px;
-    padding: 10px 0 15px 10px;
-    ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.contacts .text p {
+    color: #898BA6;
+    font-family: "Inter";
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 10px;
 }
 
-.contacts .conteiner .rowTwo {
-    display: flex;
-    flex-direction: column;
-}
-
-.contacts .conteiner img {
+.contacts .Email, .Phone {
     width: 13%;
+
     margin-right: 10px;
 }
 
-.contacts .conteiner .Phone {
-    width: 10%;
-    margin: 10px 18px 0 0;
+
+.contacts .Telegram {
+    width: 40px;
+    height: 40px;
 }
 
-
-.contacts .conteiner .Telegram {
-    width: 50%;
-}
-
-.contacts .conteiner .GitHub {
-    width: 50%;
+.contacts .GitHub {
+    width: 40px;
+    height: 40px;
 
 }
 
-.contacts .conteiner a {
+.contacts #telegram, #github {
+    width: 66px;
+}
+
+.contacts a {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin: 2.5px;
+    width: 66px;
+    height: 66px;
+    align-items: center;
 }
 
-.contacts .conteiner i {
+.contacts #email, #telehpone {
+    padding: 16px 12px 16px 8px;
+}
+
+.contacts i:hover {
+    background: #F3F3FB;
+    box-shadow: 0 0 4px 3px rgb(121 107 177 / 30%);
+}
+
+.contacts i {
     display: flex;
     align-items: center;
     color: #312669;
@@ -238,40 +305,204 @@
     font-weight: 700;
     font-style: normal;
     font-size: 14px;
+    justify-content: center;
+    background: #E6E4FD;
+    border: 2px solid #C4BFFF;
+    border-radius: 15px;
+    margin-right: 20px;
+    height: 66px;
 }
 
 /* footer close  */
 
 
-
-
 /* Home open */
 .Home {
     margin-top: 130px;
+    display: flex;
+    align-items: stretch; /* Картки завжди однакової висоти */
+    justify-content: center;
+    gap: 35px;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    max-width: 1200px; /* Загальна ширина всієї робочої зони */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-.card-home-left {}
 
-.card-home-left h1 .card-home-left p .card-home-right {}
 
-.card-home-right h1 {}
-
-.card-home-right p {}
-
-.card-home-right h2 {}
-
-.update {
-    padding: 15px;
-    border: 3px solid black;
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
-    width: 70%;
-    max-height: 200px;
-    overflow-y: auto;
+.card-home-left .left-title {
+    font-size: 24px;
+    color: #312669;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
 }
 
-.imgVidgyk {
-    width: 4%;
+/* Ліва картка */
+.card-home-left {
+    background-image: url(NewLeftFonHome.svg);
+    background-repeat: no-repeat;
+border: 7px solid #B4C6E8;
+    /* МАГІЯ ТУТ: cover змушує картинку розтягнутися і закрити весь блок */
+    background-size: cover;
+    background-position: center bottom; /* Центруємо, притискаючи папку до низу */
+min-height: 920px;
+    width: 320px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    padding: 40px 25px 60px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 0 4px 20px rgb(124 101 218 / 0.1);
 }
 
+/* Права картка */
+.card-home-right {
+    border: 7px solid #B4C6E8;
+    background-image: url(NewNewFonRightHome.svg);
+    background-repeat: no-repeat;
+min-height: 920px;
+    /* МАГІЯ ТУТ: cover розтягує правий фон на всю доступну ширину та висоту */
+    background-size: cover;
+    background-position: center center;
+
+    flex-grow: 1;
+    max-width: 800px;
+    border-radius: 25px;
+    padding: 50px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 0 4px 20px rgb(124 101 218 / 0.1);
+}
+
+/* Верхній блок тексту */
+.startINF {
+    width: 100%;
+    margin-bottom: 60px;
+        margin-top: 78px;
+}
+
+.startINF h1 {
+    font-size: 36px;
+    color: #312669;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.startINF p {
+    font-size: 16px;
+    color: #2D3548;
+    line-height: 1.5;
+   max-width: 40%;
+}
+
+/* Центральний білий блок з контактами */
+.centerINF {
+    background: #FFFFFF;
+    border-radius: 24px;
+    padding: 50px 40px 30px 40px;
+    box-shadow: 0 10px 30px rgba(124, 101, 218, 0.15);
+
+    /* Замість відсотків робимо її авто-гнучкою з відступами */
+    width: auto;
+    margin: 0 0 100px 0;
+
+    box-sizing: border-box;
+}
+
+.centerINF h2 {
+    font-size: 16px;
+    color: #2D3548;
+    font-weight: 600;
+    margin-bottom: 75px;
+}
+
+.centerINF .icons {
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap; /* Якщо місця мало, іконки перенесуться вниз, а не вилізуть вбік */
+}
+
+.icon-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-item p {
+    font-size: 15px;
+    color: #2D3548;
+    font-weight: 600;
+}
+
+.icon-circle img {
+    width: 42px;
+    height: 42px;
+}
+
+/* Нижній блок */
+.lastINF {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Декоративна лінія з текстом */
+.divider-text {
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+}
+
+.divider-text::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #D3D4E2;
+    z-index: 1;
+}
+
+.divider-text span {
+    background: #F4F2FA; /* Світлий фон під колір правої картки */
+    padding: 0 15px;
+    position: relative;
+    z-index: 2;
+    font-size: 24px;
+    color: #2D3548;
+    font-weight: 600;
+}
+
+/* Нижня біла плашка */
+.lastINF .fon {
+    background-image: url("FonHome.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 195px;
+    width: 100%; /* Тепер вона займає рівно стільки, скільки дозволяє права картка */
+    padding: 80px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.lastINF .fon p {
+    font-size: 15px;
+    color: #2D3548;
+    font-weight: 700;
+    word-break: break-all; /* Рятує від довгих нерозривних слів на кшталт "кпавывамвмц" */
+}
 /* Home close */
