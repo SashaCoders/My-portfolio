@@ -33,6 +33,7 @@ body {
     order: 10;
     box-shadow: 0 4px 20px 11px rgb(124 101 218 / 0.25);
     border-radius: 27px;
+    z-index: 100;
 }
 
 .logo a {
@@ -79,16 +80,6 @@ body {
 
 }
 
-.lengvich p {
-    color: #8689C5;
-    padding: 2px;
-    font-size: 17px;
-    cursor: pointer;
-    font-family: "Anonymous Pro", monospace;
-    font-weight: 700;
-    font-style: normal;
-    text-decoration-line: none;
-}
 
 .lengvich #UA {
     color: #877CFD;
@@ -96,17 +87,49 @@ body {
 
 .lengvich a {
     text-decoration: none;
+    position: relative;
+    padding: 4px 0;
+    display: inline-block;
 }
 
-.lengvich p:hover {
-    color: #8a9ac0e8;
-    transition: 0.5s;
+.lengvich p {
+    color: #8689C5;
+    font-size: 17px;
+    cursor: pointer;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 700;
+    transition: color 0.3s ease;
 }
 
-.lengvich p:active {
-    color: #a250dd;
-    transition: 0.2s;
+/* Эффект при наведении */
+.lengvich a:hover p {
+    color: #2D3548; /* Цвет текста становится темнее и четче */
 }
+
+/* Создаем скрытую линию под текстом */
+.lengvich a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0); /* Изначально линия сжата в 0 */
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #877CFD; /* Твой фирменный фиолетовый */
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out; /* Плавная анимация */
+}
+
+/* При наведении линия разворачивается на всю ширину */
+.lengvich a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+
+
 
 /* меню */
 .nav ul {
@@ -135,12 +158,13 @@ body {
     font-weight: 700;
     font-style: normal;
     transition: 0.3s;
-    box-shadow: 0 0 4px 3px rgb(190 177 241 / 0.25);
+    box-shadow: 0 0 4px 3px rgb(190 177 241 / 0.30);
 }
 
 
 .nav ul li a:hover {
-    background: #5cc7dc;
+    background: #F3F3FB;
+     box-shadow: 0 0 4px 3px rgb(121 107 177 / 30%);
 }
 
 /* іконки */
@@ -272,8 +296,11 @@ body {
     padding: 16px 12px 16px 8px;
 
 }
-
-.contacts i {
+.contacts i:hover {
+        background: #F3F3FB;
+     box-shadow: 0 0 4px 3px rgb(121 107 177 / 30%);
+}
+.contacts i  {
     display: flex;
     align-items: center;
     color: #312669;
@@ -329,7 +356,8 @@ body {
 
 
 .navFooter ul li a:hover {
-    background: #5cc7dc;
+      background: #F3F3FB;
+     box-shadow: 0 0 4px 3px rgb(121 107 177 / 30%);
 }
 
 /* footer close  */
