@@ -73,25 +73,38 @@ body {
     gap: 10px;
 }
 
-.nav ul .active {
+
+.nav ul #active {
     background: #7873FC;
     color: white;
     box-shadow: none;
+    padding: 5px 8px;
+    border-radius: 10px;
 }
 
-.nav ul .active:hover {
+.nav ul #active:hover {
     background: #7873FC;
     color: white;
     box-shadow: none;
+
+}
+
+.nav ul #active:hover::after {
+    transform: scaleX(0);
 }
 
 .nav ul .block {
     margin-top: 70px;
-    /* background: #8ECAFF; */
+    /* background: #F9F9FC; */
     border-radius: 12px;
     height: 110px;
     /*box-shadow: 0 2px 4px 3px rgb(190 177 241 / 0.4);*/
     box-shadow: none;
+}
+
+.nav ul .blockSkill {
+    background: #F9F9FC;
+    box-shadow: 0 2px 4px 3px rgb(190 177 241 / 0.4);
 }
 
 .nav ul .block .rul {
@@ -134,7 +147,7 @@ body {
 
 .nav ul .block .rulerSkill {
     width: 85px;
-    display: none;
+    display: flex;
 }
 
 .nav ul .block .rulerAbout {
@@ -216,7 +229,7 @@ body {
 
 /* footer open  */
 .footer {
-    margin-top: 135px;
+    margin-top: 50px;
     background: radial-gradient(ellipse at center, #F0EEFF 0%, #E8E4FC 100%);
     display: flex;
     flex-direction: column;
@@ -316,26 +329,127 @@ body {
 /* footer close  */
 
 
-
-
-
 /* Skill open */
-.skills {}
+.skills {
+    background-color: #F8F8FD; /* Общий светлый фон секции */
+    border: 3px solid #E4E4FB;
+    border-radius: 24px;
+    padding: 40px;
+    font-family: sans-serif; /* Поменяй на свой шрифт, если надо */
+    max-width: 1100px;
+    margin: 50px auto;
+}
 
-.skills h2 {}
+.skills-header {
+    margin-bottom: 30px;
+}
 
-.skills .skil {}
+.skills-title {
+    font-size: 24px;
+    color: #312669;
+    margin: 0 0 8px 0;
+}
 
-.skills .skil p {}
+.skills-subtitle {
+    font-size: 16px;
+    color: rgb(49 38 105 / 0.69);
+    font-weight: normal;
+    margin: 0;
+}
 
-.skills .language {}
+/* Контейнер для карточек (выстраивает их в ряд) */
+.skills-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
 
-.skills .framefork {}
+/* Общий стиль для всех трех карточек */
+.skills .skil {
+    flex: 1;
+    border: 5px solid #E9E7FB;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; /* Чтобы подложка иконок не вылезала за скругленные углы */
+    min-height: 380px; /* Примерная высота карточки */
+}
 
-.skills .library {}
+/* Блок с текстом внутри карточки */
+.skil-info {
+    padding: 30px 25px 20px 25px;
+}
 
-.skills .programs {}
+.skil-title {
+    font-size: 20px;
+    color: #312669;
+    margin: 0 0 12px 0;
+}
+
+.skills .skil p {
+    font-size: 14px;
+    color: rgb(49 38 105 / 0.69);
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Зона для иконок (однотонная подложка снизу) */
+.skil-icons {
+    height: 180px; /* Высота зоны под иконки */
+    margin: 0 15px 15px 15px; /* Отступы, чтобы подложка «парила» внутри, как на макете */
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+/* Цвета для блоков с иконками */
+.icons-blue {
+    background-image: url("IconLen.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: start center;
+}
+
+.icons-pink {
+    background-image: url("IconFSB.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: start center;
+}
+
+.icons-green {
+    background-image: url("IconP.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: start center;
+}
+
+/* Специфические стили, если понадобятся */
+.skills .language {
+    background: linear-gradient(90deg, #EFF9FE 0%, #F5F4FD 100%);
+    background-image: url("BlueFonCard.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.skills .framework {
+    background-image: url("PinkFonCart.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.skills .programs {
+    background-image: url("GreenFonCard.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
 
 /* Skill close */
-
-

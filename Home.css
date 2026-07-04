@@ -73,13 +73,13 @@ body {
     gap: 10px;
 }
 
-.nav ul .active {
+.nav ul #active {
     background: #7873FC;
     color: white;
     box-shadow: none;
 }
 
-.nav ul .active:hover {
+.nav ul #active:hover {
     background: #7873FC;
     color: white;
     box-shadow: none;

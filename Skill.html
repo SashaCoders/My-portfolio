@@ -14,8 +14,8 @@
 </head>
 
 <body>
-    <div class="main">
-           <header class="header">
+<div class="main">
+    <header class="header">
         <div class="logo"><a href="index.html">
             <div class="logotip"></div>
             <p>My portfolio Skill</p></a></div>
@@ -30,7 +30,7 @@
                         <p>Вміння</p>
                     </div>
                     <div class="ruler rulerSkill" id="rulerSkill">
-                        <a href="Skill.html" class="active">Навички</a>
+                        <a href="Skill.html" id="active">Навички</a>
                         <a href="Projects.html">Проекти</a>
                     </div>
                 </div>
@@ -52,24 +52,39 @@
         </nav>
 
     </header>
-        <section class="skills">
-            <h2>Мої скіли</h2>
-            <h3>Тут я розповім про свої навички</h3>
-            <div class="language skil">
-                <p>Я знаю мови програмування, такі як: С++, js, css, html а також git для спільного
-                    програмування.</p>
+    <section class="skills">
+    <div class="skills-header">
+        <h2 class="skills-title">Мої скіли</h2>
+        <h3 class="skills-subtitle">Тут я розповім про свої навички</h3>
+    </div>
+
+    <div class="skills-container">
+        <div class="skil language">
+            <div class="skil-info">
+                <h3 class="skil-title">Мови програмування</h3>
+                <p class="skil-desc">Технології, якими я пишу код щодня</p>
             </div>
-            <div class="framefork skil">
-                <p>Frameforks: Bootstrap.</p>
+            <div class="skil-icons icons-blue"></div>
+        </div>
+
+        <div class="skil framework">
+            <div class="skil-info">
+                <h3 class="skil-title">Бібліотеки</h3>
+                <p class="skil-desc">Інструменти для швидкої розробки</p>
             </div>
-            <div class="library skil">
-                <p>Libraries: jQuery, React.</p>
+            <div class="skil-icons icons-pink"></div>
+        </div>
+
+        <div class="skil programs">
+            <div class="skil-info">
+                <h3 class="skil-title">Програми</h3>
+                <p class="skil-desc">Застосунки які я використовую</p>
             </div>
-            <div class="programs skil">
-                <p>Programs: Blender, Figma, Arduino IDE, VS Code, Git, Node.js, MIT App Inventor.</p>
-            </div>
-        </section>
-        <footer class="footer">
+            <div class="skil-icons icons-green"></div>
+        </div>
+    </div>
+</section>
+    <footer class="footer">
         <div class="contacts">
             <div class="text"><h1>My contacts</h1>
                 <p>Зв’яжись зі мною будь-яким зручним способом</p></div>
@@ -100,7 +115,7 @@
         </div>
 
     </footer>
-    </div>
+</div>
 </body>
 
 </html>
