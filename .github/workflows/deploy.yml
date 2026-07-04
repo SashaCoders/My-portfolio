@@ -2,7 +2,7 @@ name: Deploy Website
 
 on:
   push:
-    branches: ["main"] # или "master", если твоя главная ветка называется так
+    branches: ["main", "Dev"] # или "master", если твоя главная ветка называется так
 
 permissions:
   contents: read
