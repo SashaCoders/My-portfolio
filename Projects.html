@@ -15,38 +15,43 @@
 
 <body>
     <div class="main">
-        <header class="header">
-            <div class="logo"><a href="index.html">logo</a></div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="Home.html">Головна</a></li>
+           <header class="header">
+        <div class="logo"><a href="index.html">
+            <div class="logotip"></div>
+            <p>My portfolio Skill</p></a></div>
 
-                    <div class="block blockSkill">
-                        <div class="rul rulSkill" id="rulSkill">
-                            <p>Вміння</p>
-                        </div>
-                        <div class="ruler rulerSkill" id="rulerSkill">
-                            <a href="Skill.html">Навички</a>
-                            <a href="Projects.html">Проекти</a>
-                        </div>
+        <nav class="nav">
+
+            <ul>
+                <li><a href="Home.html">Головна</a></li>
+
+                <div class="block blockSkill">
+                    <div class="rul rulSkill" id="rulSkill">
+                        <p>Вміння</p>
                     </div>
-
-                    <div class="block blockAbout">
-                        <div class="rul rulAbout" id="rulAbout">
-                            <p>Про мене</p>
-                        </div>
-                        <div class="ruler rulerAbout" id="rulerAbout">
-                            <a href="About.html">Про мене</a>
-                            <a href="Blog.html">Блог</a>
-                        </div>
+                    <div class="ruler rulerSkill" id="rulerSkill">
+                        <a href="Skill.html">Навички</a>
+                        <a href="Projects.html"  id="active">Проекти</a>
                     </div>
+                </div>
+
+                <div class="block blockAbout">
+                    <div class="rul rulAbout" id="rulAbout">
+                        <p>Про мене</p>
+                    </div>
+                    <div class="ruler rulerAbout" id="rulerAbout">
+                        <a href="About.html">Про мене</a>
+                        <a href="Blog.html">Блог</a>
+                    </div>
+                </div>
 
 
-                    <li><a href="Links.html">Силки</a></li>
-                    <li><a href="Licenses.html">Ліцензії</a></li>
-                </ul>
-            </nav>
-        </header>
+                <li><a href="Links.html">Силки</a></li>
+                <li><a href="Licenses.html">Ліцензії</a></li>
+            </ul>
+        </nav>
+
+    </header>
 
         <section class="Proj-1">
             <div class="card-proj">
@@ -161,38 +166,36 @@
         </section>
 
         <footer class="footer">
-            <div class="contacts">
-                <h1>My contacts</h1>
-                <div class="conteiner">
-                    <div class="row rowOne">
-                        <i aria-hidden="true" onclick="copyText('email')" id="email"><img src="Email.svg" alt="">
-                            aleksandrpodlesnyi09@email.com</i>
-
-                        <i aria-hidden="true" onclick="copyText('telehpone')" id="telehpone"><img src="phone.svg"
-                                class="Phone" alt=""> +(380)
-                            099394 67 01</i>
-                    </div>
-                    <div class="row rowTwo">
-                        <a href="https://web.telegram.org/k/#@Cawaaaaaaaaaaaaaaa" target="_blank"><img
-                                src="Telegram.svg" class="Telegram" alt=""></a>
-
-                        <a href="https://github.com/SashaCoders" target="_blank"><img src="GitHub.svg" class="GitHub"
-                                alt=""></a>
-                    </div>
-
-                </div>
-                <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
-                <!-- <a href="#"><i class="fa fa-youtube"></i></a> -->
-
-                <!-- <i class="fa fa-times" aria-hidden="true"></i>  -->
-
-                <!-- <i class="fa fa-sun-o" aria-hidden="true"></i>
-                <i class="fa fa-moon-o" aria-hidden="true"></i> -->
+        <div class="contacts">
+            <div class="text"><h1>My contacts</h1>
+                <p>Зв’яжись зі мною будь-яким зручним способом</p></div>
 
 
-            </div>
+            <i aria-hidden="true" onclick="copyText('email')" id="email"><img src="NewEmail.svg" class="Email" alt="">
+                aleksandrpodlesnyi09@email.com</i>
 
-        </footer>
+            <i aria-hidden="true" onclick="copyText('telehpone')" id="telehpone"><img src="NewPhone.svg"
+                                                                                      class="Phone" alt="">
+                +(380)
+                099394 67 01</i>
+            <i id="telegram">
+                <a href="https://web.telegram.org/k/#@Cawaaaaaaaaaaaaaaa" target="_blank"><img
+                        src="NewTelegram.svg" class="Telegram" alt=""></a>
+            </i>
+            <i id="github">
+                <a href="https://github.com/SashaCoders" target="_blank"><img src="NewGithub.svg" class="GitHub"
+                                                                              alt=""></a></i>
+
+            <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+            <!-- <a href="#"><i class="fa fa-youtube"></i></a> -->
+
+            <!-- <i class="fa fa-times" aria-hidden="true"></i>  -->
+
+            <!-- <i class="fa fa-sun-o" aria-hidden="true"></i>
+            <i class="fa fa-moon-o" aria-hidden="true"></i> -->
+        </div>
+
+    </footer>
     </div>
 </body>
 
